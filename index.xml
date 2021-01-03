@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>epsilon greedy</title>
+        <link>https://epsilongreedy.github.io/</link>
+        <description>epsilon greedy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://epsilongreedy.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>1984</title>
+    <link>https://epsilongreedy.github.io/posts/books/1984/</link>
+    <pubDate>Sat, 12 Dec 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://epsilongreedy.github.io/posts/books/1984/</guid>
+    <description><![CDATA[Summary 1984 is about an attempt to brainwash an entire nation into subservience. &ldquo;The Party&rdquo; controls nearly all aspects of its citizens' lives: when they get up and go to work, what they wear, what forms of entertainment they can engage in, what they are allowed to say and think. Every citizen&rsquo;s home is equipped with a &ldquo;telescreen&rdquo; which is both a surveillance camera and a propaganda outlet. Needless to say, the smallest sign of nonconformity is punished by forced labour or death (or so it seems).]]></description>
+</item><item>
+    <title>Cramér-Chernoff bound</title>
+    <link>https://epsilongreedy.github.io/posts/maths/chernoff/</link>
+    <pubDate>Fri, 24 Aug 2018 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://epsilongreedy.github.io/posts/maths/chernoff/</guid>
+    <description><![CDATA[As a prerequisite, we will need Markov&rsquo;s inequality.
+Markov  For a random variable \( Z\geq 0 \), and \( x&gt;0 \), $$ \mathbb{P}[Z \geq x] \leq \frac{ \mathbb{E}[Z]} {x}. $$
+  Cramér-Chernoff This is an exponential bound, derived by applying Markov to exponentiated \(Z\), and optimising the RHS. For \( \lambda\geq 0 \), Markov implies $$ \mathbb{P}[Z \geq x] = \mathbb{P}\left[ e^{\lambda Z} \geq e^{\lambda x} \right] \leq \mathbb{E}\left[e^{\lambda Z}\right] e^{-\lambda x}.]]></description>
+</item><item>
+    <title>Tsybakov&#39;s low-noise condition</title>
+    <link>https://epsilongreedy.github.io/posts/maths/tsybakov/</link>
+    <pubDate>Wed, 22 Aug 2018 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://epsilongreedy.github.io/posts/maths/tsybakov/</guid>
+    <description><![CDATA[Consider binary classification. Let \( (X, Y) \) be random variables on \( \mathcal{X} \times \{0,1 \} \); denote by \( P_X \) the marginal distribution of \( X \), and by \( \eta(x) = \mathbb{P}(Y=1|X=x) \) the conditional probability of \(Y\) being one, given a value for \(X\).
+Clearly, some combinations of \( (P_X, \eta) \) are more difficult to learn than others. The following condition on \(P_X\) and \(\eta\) make learning fast:]]></description>
+</item></channel>
+</rss>

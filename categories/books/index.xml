@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Books - Category - epsilon greedy</title>
+        <link>https://epsilongreedy.github.io/categories/books/</link>
+        <description>Books - Category - epsilon greedy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://epsilongreedy.github.io/categories/books/" rel="self" type="application/rss+xml" /><item>
+    <title>1984</title>
+    <link>https://epsilongreedy.github.io/posts/books/1984/</link>
+    <pubDate>Sat, 12 Dec 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://epsilongreedy.github.io/posts/books/1984/</guid>
+    <description><![CDATA[Summary 1984 is about an attempt to brainwash an entire nation into subservience. &ldquo;The Party&rdquo; controls nearly all aspects of its citizens' lives: when they get up and go to work, what they wear, what forms of entertainment they can engage in, what they are allowed to say and think. Every citizen&rsquo;s home is equipped with a &ldquo;telescreen&rdquo; which is both a surveillance camera and a propaganda outlet. Needless to say, the smallest sign of nonconformity is punished by forced labour or death (or so it seems).]]></description>
+</item></channel>
+</rss>

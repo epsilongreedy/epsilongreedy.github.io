@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>1984 - epsilon greedy</title><meta name="Description" content=""><meta property="og:title" content="1984" />
+<meta property="og:description" content="Summary 1984 is about an attempt to brainwash an entire nation into subservience. &ldquo;The Party&rdquo; controls nearly all aspects of its citizens&#39; lives: when they get up and go to work, what they wear, what forms of entertainment they can engage in, what they are allowed to say and think. Every citizen&rsquo;s home is equipped with a &ldquo;telescreen&rdquo; which is both a surveillance camera and a propaganda outlet. Needless to say, the smallest sign of nonconformity is punished by forced labour or death (or so it seems)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://epsilongreedy.github.io/posts/books/1984/" />
+<meta property="article:published_time" content="2020-12-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="1984"/>
+<meta name="twitter:description" content="Summary 1984 is about an attempt to brainwash an entire nation into subservience. &ldquo;The Party&rdquo; controls nearly all aspects of its citizens&#39; lives: when they get up and go to work, what they wear, what forms of entertainment they can engage in, what they are allowed to say and think. Every citizen&rsquo;s home is equipped with a &ldquo;telescreen&rdquo; which is both a surveillance camera and a propaganda outlet. Needless to say, the smallest sign of nonconformity is punished by forced labour or death (or so it seems)."/>
+<meta name="application-name" content="epsilon greedy">
+<meta name="apple-mobile-web-app-title" content="epsilon greedy"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://epsilongreedy.github.io/posts/books/1984/" /><link rel="prev" href="https://epsilongreedy.github.io/posts/maths/chernoff/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "1984",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/epsilongreedy.github.io\/posts\/books\/1984\/"
+        },"genre": "posts","wordcount":  284 ,
+        "url": "https:\/\/epsilongreedy.github.io\/posts\/books\/1984\/","datePublished": "2020-12-12T00:00:00+00:00","dateModified": "2020-12-12T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "greedy"},"author": {
+                "@type": "Person",
+                "name": "greedy"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="epsilon greedy">epsilon greedy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="epsilon greedy">epsilon greedy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">1984
+          <div style="float:right"><a href="https://www.goodreads.com/book/show/40961427" target="_blank"> <img src="../goodreads.png" style="width:30px;height:30px;vertical-align:middle;margin-right:5px"></a></div></h1><h2 class="single-subtitle">by George Orwell</h2><div class="post-meta">
+            <div class="post-meta-line">
+                
+                
+                
+                
+                
+                
+
+                [<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-12-12">2020-12-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;284 words&nbsp;
+                &nbsp;<span class="post-category">
+                        <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>
+                    </span>&nbsp;] <p></p></div>
+        </div><div class="content" id="content"><h2 id="summary">Summary</h2>
+<p>1984 is about an attempt to brainwash an entire nation into subservience.
+&ldquo;The Party&rdquo; controls nearly all aspects of its citizens' lives:
+when they get up and go to work, what they wear, what forms of entertainment they can engage in,
+what they are allowed to say and think.
+Every citizen&rsquo;s home is equipped with a &ldquo;telescreen&rdquo; which is both a surveillance camera and a propaganda outlet.
+Needless to say, the smallest sign of nonconformity is punished by forced labour or death (or so it seems).</p>
+<p>Importantly, the system is very good at shaping its citizens' thoughts.
+Official news and other writings are continuously edited to depict the Party in good light.
+There is a (possibly made up) enemy of the state who is blamed for the Party&rsquo;s failures, and serves as the universal target for all negative emotions.
+Children attend &ldquo;education camps&rdquo; from an early age and are encouraged to report nonconformist behaviour.</p>
+<h2 id="is-the-system-evil">Is the system evil??</h2>
+<ul>
+<li>It massively restricts individual freedom.</li>
+<li>People are killed or subjected to forced labour. Even among those who aren&rsquo;t, many are unhappy.</li>
+<li>The system actively tries to reduce the diversity of conscious states.</li>
+</ul>
+<h2 id="breaking-the-system">Breaking the system</h2>
+<p>The system is hard to break because:</p>
+<ul>
+<li>
+<p>Many people are genuinely brainwashed and loyal to the Party.
+The unorthodox have to continuously put up an appearance of orthodoxy, for risk of being reported.</p>
+</li>
+<li>
+<p>Virtually all public and private space is under surveillance.
+Hence there is nowhere to talk in private to organise a revolt.</p>
+</li>
+<li>
+<p>There is a task force, called the Thought Police, dedicated to detecting and dealing with unorthodoxy. The Thought Police is extremely well-informed and thorough. It is led by intelligent and devoted members of the Inner Party.</p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags">
+            
+        </section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    
+    
+    
+    
+    
+    
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.79.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div>
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
